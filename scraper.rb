@@ -38,7 +38,6 @@ def scrape_term(term)
       identifier__wikipedia_fo: wikiname,
       source: term[:source],
     }
-    puts data
     ScraperWiki.save_sqlite([:id, :term], data)
   end
 end
