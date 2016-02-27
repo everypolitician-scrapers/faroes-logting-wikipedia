@@ -50,6 +50,7 @@ term_data = [
   [ '2004', 'https://fo.wikipedia.org/wiki/L%C3%B8gtingslimir_%C3%AD_F%C3%B8royum_2004-2008', ],
   [ '2008', 'https://fo.wikipedia.org/wiki/L%C3%B8gtingslimir_%C3%AD_F%C3%B8royum_2008%E2%80%932011', ],
   [ '2011', 'https://fo.wikipedia.org/wiki/L%C3%B8gtingslimir_%C3%AD_F%C3%B8royum_2011%E2%80%932015', ],
+  [ '2015', 'https://fo.wikipedia.org/wiki/L%C3%B8gtingslimir_%C3%AD_F%C3%B8royum_2015%E2%80%932019', ],
 ]
 
 term_data.each_with_index do |t, i|
