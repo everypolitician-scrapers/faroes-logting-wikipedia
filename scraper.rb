@@ -54,14 +54,9 @@ term_data = [
 ]
 
 term_data.each_with_index do |t, i|
-  term = { 
+  term = {
     id: t.first,
-    name: '',
-    start_date: t.first,
-    end_date: (term_data[i+1] || []).first,
     source: t.last,
   }
-  term[:name] = "Løgting %s–%s" % [term[:start_date], term[:end_date]]
-  ScraperWiki.save_sqlite([:id], term, 'terms')
   scrape_term(term)
 end
