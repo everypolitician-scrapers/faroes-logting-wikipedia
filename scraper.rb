@@ -40,6 +40,8 @@ def scrape_term(term)
   end
 end
 
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
+
 term_data = [ 
   [ '1990', 'https://fo.wikipedia.org/wiki/L%C3%B8gtingslimir_%C3%AD_F%C3%B8royum_1990-94', ],
   [ '1994', 'https://fo.wikipedia.org/wiki/L%C3%B8gtingslimir_%C3%AD_F%C3%B8royum_1994-98', ],
